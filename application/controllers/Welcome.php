@@ -5,6 +5,10 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
+		$this->load->view('chart');
+	}
+	public function chart()
+	{
 		$this->load->view('welcome_message');
 	}
 

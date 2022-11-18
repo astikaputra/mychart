@@ -9,7 +9,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </head>
 <body>
 <div class="container-fluid">
-  <center>  
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    <center>  
 	<div class="row mt-4">	
 		<div class="col-4">
 		<p><b>DEPARTEMENT ICT</b></p>
@@ -23,19 +31,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p><b>DEPARTEMENT MARKETING</b></p>
 			<canvas id="line"></canvas>
 		</div>
-		<div class="col-4">
-		<p><b>DEPARTEMENT ICT</b></p>
-			<canvas id="line" height="100"></canvas>
-		</div>
-		<div class="col-4">
-		<p><b>DEPARTEMENT QR</b></p>
-			<canvas id="line" height="100"></canvas>
-		</div>
-		<div class="col-4">
-		<p><b>DEPARTEMENT MARKETING</b></p>
-			<canvas id="line" height="100"></canvas>
-		</div>
-		<div class="col-4">
+
+    </center> 
+      <img class="d-block w-100" src="..." alt="First slide">
+    </div>
+    <div class="carousel-item">
+    <center>
+    <div class="col-4">
 		<p><b>DEPARTEMENT ICT</b></p>
 			<canvas id="line" height="100"></canvas>
 		</div>
@@ -49,11 +51,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	</div>	
 	</center>
+      <img class="d-block w-100" src="..." alt="Second slide">
+    </div>
+    <div class="carousel-item">
+	<div class="col-4">
+		<p><b>DEPARTEMENT ICT</b></p>
+			<canvas id="line" height="100"></canvas>
+		</div>
+		<div class="col-4">
+		<p><b>DEPARTEMENT QR</b></p>
+			<canvas id="line" height="100"></canvas>
+		</div>
+		<div class="col-4">
+		<p><b>DEPARTEMENT MARKETING</b></p>
+			<canvas id="line" height="100"></canvas>
+		</div>
+     <img class="d-block w-100" src="..." alt="Third slide">
+    </div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  </div>
+</div>
+	
 </div>
 
 
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>	
 	<script>
 
 		const baseUrl = "<?php echo base_url();?>"
